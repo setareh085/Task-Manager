@@ -9,8 +9,11 @@ The goal of the project is to **add, manage, and search tasks easily from the co
 Task-Manager/
 
 ├── task.py # Module for handling a single task
+
 ├── todo_list.py # Module for managing the task list
+
 ├── todolist.py # Main entry point to run the program
+
 └── README.md # Project documentation
 
 ---
