@@ -20,7 +20,9 @@ Task-Manager/
 
 ## ⚙️ Requirements
 - Python 3.10+
-
+- Standard libraries:
+  - datetime (built-in with Python)
+    
 ---
 
 ## 🚀 Installation
