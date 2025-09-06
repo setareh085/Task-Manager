@@ -40,20 +40,14 @@ Task-Manager/
    ```
 ## 📝 Features
 
-➕ Add new tasks
-❌ Delete existing tasks
-
-📋 View all tasks
-
-💾 Save tasks to a file
-
-📂 Load tasks from a file
-
-✏️ Edit tasks
-
-🔍 Search tasks
-
-🚪 Exit program
+- ➕ Add new tasks
+- ❌ Delete existing tasks
+- 📋 View all tasks
+- 💾 Save tasks to a file
+- 📂 Load tasks from a file
+- ✏️ Edit tasks
+- 🔍 Search tasks
+- 🚪 Exit program
 
 ## 📌 Usage
 
