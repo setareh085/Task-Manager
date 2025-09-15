@@ -71,3 +71,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Setareh
 
 Project created for practicing Python, file handling, and console applications.
+
+## 📘 What I Learned
+In this project, I learned how to design a modular Python application, work with file handling for saving and loading data, and apply object-oriented programming (OOP) principles for task management.
