@@ -55,6 +55,7 @@ class TodoList():
                 task.description = input("enter new description: ")
                 task.priority = input("enter new priority (up/down/medium): ")
                 task.status = input("enter new status (waiting, inprogress, done): ")
+                task.deadline = input("enter new deadline: ")
                 flag = True
                 print("successfuly edited.")
         if not flag:
@@ -64,8 +65,10 @@ class TodoList():
         for task in self.tasks:
             if name in task.name:
                 print(task)
-            if description in task.description:
+            elif description in task.description:
                 print(task)
+            else:
+                print("No task found.")
 
     def save_to_csv(self, filename):
          with open(f"{filename}.csv", "w", encoding="utf-8") as file_todo:
@@ -85,11 +88,15 @@ class TodoList():
                 read = csv.reader(file_todo)
                 next(read)
                 for row in read:
-                    if len(row) != 4:  # اگر تعداد ستون‌ها درست نبود، رد شو
+                    if len(row) == 4:
+                        name, description, priority, status = row
+                        deadline = None
+                    elif len(row) == 5:
+                        name, description, priority, status, deadline = row
+                    else:
                         continue
-                    name, description, priority, status = row
-                    task = Task(name, description, priority, status)
-                    self.tasks.append(task)
+                task = Task(name, description, priority, status, deadline)
+                self.tasks.append(task)
         
         except FileNotFoundError:
            print("File not found")
